@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+     <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    
+    
+    <title>Parque Parrilla</title>
+</head>
+<body>
+    <header class="site-header">
+        <div  class="contenedor">
+            <div class="barra">
+                <a href="/"><img class="no-margin centrar-imagen" src="img/logo.svg" alt="logo" width="300"></a>
+           
+
+                <nav class="navegacion">
+                    <a href="/">Inicio</a>
+                    <a href="productos.html">Productos</a>
+                    <a href="contacto.html">Contacto</a>
+                </nav>
+            </div>
+                <div class="text-header">
+                    <h2 class="no-margin">El restaurante con la mejor sasón del Huila</h2>
+                    <p class="no-margin">Ven y visita nuestro local</p>
+                </div>
+            
+        </div>
+
+        
+    </header>
+
+    <div class="titulo-productos centrar-texto">
+        <h2 class="animate__animated animate__bounce">Nuestra recomendación</h2>
+    </div>
+
+    <div class="contenedor columnas">
+
+       
+
+        <article class="entrada-blog">
+            <h3 class="centrar-texto">Parrillada</h3>
+            <div class="contenedor-imagen">
+                <img class="efecto-hover" src="img/parrilla.jpg">
+            </div>
+            
+            <p>Maecenas maximus urna vitae nisl semper, id volutpat ipsum scelerisque. Aenean nec ipsum finibus, eleifend dolor at, venenatis risus. Quisque varius orci et augue scelerisque luctus.</p>
+            <a href="#">Leer más</a>
+        </article>
+
+        <article class="entrada-blog">
+            <h3 class="centrar-texto">Costillas ahumadas</h3>
+            <div class="contenedor-imagen">
+                <img class="efecto-hover" src="img/parrilla.jpg">
+            </div>
+
+            <p>Maecenas maximus urna vitae nisl semper, id volutpat ipsum scelerisque. Aenean nec ipsum finibus, eleifend dolor at, venenatis risus. Quisque varius orci et augue scelerisque luctus.</p>
+            <a href="#">Leer más</a>
+        </article>
+
+        <article class="entrada-blog">
+            <h3 class="centrar-texto">Lomo ahumado</h3>
+            <div class="contenedor-imagen">
+                <img class="efecto-hover" src="img/parrilla.jpg">
+            </div>
+
+            <p>Maecenas maximus urna vitae nisl semper, id volutpat ipsum scelerisque. Aenean nec ipsum finibus, eleifend dolor at, venenatis risus. Quisque varius orci et augue scelerisque luctus.</p>
+            <a href="#">Leer más</a>
+        </article>
+        <article class="entrada-blog">
+            <h3 class="centrar-texto">Sancocho</h3>
+            <div class="contenedor-imagen">
+                <img class="efecto-hover" src="img/parrilla.jpg">
+            </div>
+            <p>Maecenas maximus urna vitae nisl semper, id volutpat ipsum scelerisque. Aenean nec ipsum finibus, eleifend dolor at, venenatis risus. Quisque varius orci et augue scelerisque luctus.</p>
+            <a href="#">Leer más</a>
+        </article>
+
+        <article class="entrada-blog">
+            <h3 class="centrar-texto">Bandeja paisa</h3>
+            <div class="contenedor-imagen">
+                <img class="efecto-hover" src="img/parrilla.jpg">
+            </div>
+
+            <p>Maecenas maximus urna vitae nisl semper, id volutpat ipsum scelerisque. Aenean nec ipsum finibus, eleifend dolor at, venenatis risus. Quisque varius orci et augue scelerisque luctus.</p>
+            <a href="#">Leer más</a>
+        </article>
+
+        <article class="entrada-blog">
+            <h3 class="centrar-texto">Mixta</h3>
+            <div class="contenedor-imagen">
+                <img class="efecto-hover" src="img/mixta.jpg">
+            </div>
+
+            <p>Maecenas maximus urna vitae nisl semper, id volutpat ipsum scelerisque. Aenean nec ipsum finibus, eleifend dolor at, venenatis risus. Quisque varius orci et augue scelerisque luctus.</p>
+            <a href="#">Leer más</a>
+        </article>
+    </div>
+
+    <div class="titulo-mapa">
+        <h2 class="centrar-texto">Nuestra ubicacion</h2>
+    </div>
+    <div id="mapid" ></div>
+
+    <!--Whatsapp-->
+    <section id="whatsapp">
+        <a target="_blank" href="https://wa.me/3209744111?text=Hola!%20buenas%20"><img src="img/whatsapp.png" width="50" alt="whatsappimage"></a>
+    </section>
+
+    <footer class="site-footer">
+        <div class="contenedor">
+            <div class="barra">
+                <img src="img/logo.svg" alt="logo" width="300">
+                <nav class="navegacion">
+                    <a href="/">Inicio</a>
+                    <a href="productos.html">Productos</a>
+                    <a href="contacto.html">Contacto</a>
+                </nav>
+            </div>
+
+            
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+    <!--Scripts-->
+   <script src="js/main.js"></script>
+
+
+</body>
+</html>
